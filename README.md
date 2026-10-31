@@ -1,6 +1,6 @@
-# M.Sc. Computer Science
+# M.Sc. Electrical Engineering
 
-Coursework, research projects, and academic materials for my Master of Science (M.Sc.) degree in Computer Science.
+Coursework, research projects, and academic materials for my Master of Science (M.Sc.) degree in Electrical Engineering.
 
 ---
 
