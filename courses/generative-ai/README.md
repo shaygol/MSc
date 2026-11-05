@@ -4,7 +4,7 @@ Semester A 2026/27, BGU (Moodle course 66925).
 
 This folder holds **my own** work for the course: notes, summaries, exercises and code.
 It does **not** contain the lecturer's material (slides, recordings, handouts, exam material).
-That stays on Moodle. See [Content policy](#content-policy).
+That stays on Moodle.
 
 ---
 
@@ -51,7 +51,5 @@ Foundational textbooks and courses:
 
 ## Content policy
 
-- Own summaries, presentations, code and other learning material (from any source other than this lecturer) are welcome here.
-- Do not copy the lecturer's original files (slides, handouts, recordings, exercises) into the repo. Keep them locally in `lecturer-material/`, which is git-ignored.
+- Do not copy the lecturer's original files (slides, handouts, recordings, exercises) into the repo. Keep them locally
 - Cite public papers by title and link.
-- If AI helped with a file, say so in it.
