@@ -1,12 +1,7 @@
-# Lecturer's materials: keep local, never commit
-lecture-material/
-slides/
-recordings/
-*.pptx
-*.ppt
-*.mp4
-*.mkv
-*.zip
+# Lecturer's original files: keep local, never commit.
+# Put them in this folder (or add specific names below).
+lecturer-material/
+
 __pycache__/
 *.pyc
 .venv/

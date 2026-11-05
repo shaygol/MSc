@@ -22,6 +22,7 @@ Later units are not published yet; add rows as they appear.
 
 ## Content policy
 
-- Do not commit lecture slides, PDFs, recordings or links that require a Moodle login.
-- Cite public papers by title and link, do not copy their text.
-- Everything here is my own writing and code. If AI helped, say so in the file.
+- Own summaries, presentations, code and other learning material (from any source other than this lecturer) are welcome here.
+- Do not copy the lecturer's original files (slides, handouts, recordings, exercises) into the repo. Keep them locally in `lecturer-material/`, which is git-ignored.
+- Cite public papers by title and link.
+- If AI helped with a file, say so in it.
