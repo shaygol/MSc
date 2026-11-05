@@ -58,3 +58,7 @@ coverage.xml
 ehthumbs.db
 Thumbs.db
 
+# Course local-only materials (lecturer slides, handouts, recordings)
+lecturer-material/
+lecture-material/
+
