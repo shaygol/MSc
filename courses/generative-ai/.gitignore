@@ -1,0 +1,12 @@
+# Lecturer's materials: keep local, never commit
+lecture-material/
+slides/
+recordings/
+*.pptx
+*.ppt
+*.mp4
+*.mkv
+*.zip
+__pycache__/
+*.pyc
+.venv/
