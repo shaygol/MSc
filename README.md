@@ -8,7 +8,6 @@ Coursework, research projects, and academic materials for my Master of Science (
 
 - **[`courses/`](courses/)** — Course materials, assignments, and lecture notes.
   - **[`data-centers-and-ai-networks/`](courses/data-centers-and-ai-networks/)** — Data Center Networks & AI (Course 361.2.2460, Semester A 2026).
-  - **[`exercises/`](courses/exercises/)** — Homework exercises for all courses, with a shared Python environment.
 - **[`research/`](research/)** — Thesis work, literature reviews, and research experiments.
 - **[`resources/`](resources/)** — General reference materials, academic papers, and tools.
 
@@ -22,4 +21,4 @@ Coursework, research projects, and academic materials for my Master of Science (
 
 ---
 
-Each course keeps its materials in its own folder under `courses/`. Homework code lives in [`courses/exercises/`](courses/exercises/), one folder per exercise.
+Each course keeps its materials in its own folder under `courses/`. Homework code lives in each course's `exercises/` folder, one folder per exercise.
