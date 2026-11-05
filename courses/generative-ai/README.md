@@ -12,42 +12,32 @@ That stays on Moodle. See [Content policy](#content-policy).
 
 Topics in lecture order:
 
-1. **Introduction and autoregressive models** (FVSBN, NADE, MADE, RNN, PixelRNN/PixelCNN, WaveNet)
-2. **Energy-based models and score-based models**
-3. **Diffusion models (continuous)**
-4. **Diffusion models (discrete)**
-5. **Graph neural networks**
-6. **Audio generation**
-7. **Transformers for image generation**
-8. **Mamba, state space models, and advanced RNNs** (xLSTM, RWKV, Griffin)
-9. **AI quantum codes**
-10. **Final project presentations**
+| # | Topic | Materials | Notes |
+|:---:|---|---|:---:|
+| **1** | **Introduction and autoregressive models**<br>(FVSBN, NADE, MADE, RNN, PixelRNN/PixelCNN, WaveNet) | • [NADE (JMLR 2016)](https://arxiv.org/abs/1605.02226)<br>• [MADE (2015)](https://arxiv.org/abs/1502.03509)<br>• [PixelRNN / PixelCNN (2016)](https://arxiv.org/abs/1601.06759)<br>• [WaveNet (2016)](https://arxiv.org/abs/1609.03499)<br>• [Attention Is All You Need (2017)](https://arxiv.org/abs/1706.03762) |  |
+| **2** | **Energy-based models and score-based models** | • [LeCun Tutorial on EBMs (2006)](http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf)<br>• [Song & Kingma: Training EBMs (2021)](https://arxiv.org/abs/2101.03288)<br>• [Sliced Score Matching (2019)](https://arxiv.org/abs/1905.07088)<br>• [Song & Ermon: Score Gradients (2019)](https://arxiv.org/abs/1907.05600) |  |
+| **3** | **Diffusion models (continuous)** | • [DDPM (2020)](https://arxiv.org/abs/2006.11239)<br>• [Song et al.: SDEs (2020)](https://arxiv.org/abs/2011.13456)<br>• [DDIM (2020)](https://arxiv.org/abs/2010.02502) |  |
+| **4** | **Diffusion models (discrete)** | • [D3PM: Discrete Diffusion (2021)](https://arxiv.org/abs/2107.03006)<br>• [Bit-Diffusion (2022)](https://arxiv.org/abs/2208.04202) |  |
+| **5** | **Graph neural networks** | • [Graph Convolutional Networks (2016)](https://arxiv.org/abs/1609.02907)<br>• [GraphVAE (2018)](https://arxiv.org/abs/1802.03480)<br>• [DiGress: Graph Diffusion (2022)](https://arxiv.org/abs/2209.14734) |  |
+| **6** | **Audio generation** | • [DiffWave (2020)](https://arxiv.org/abs/2009.09761)<br>• [Jukebox (2020)](https://arxiv.org/abs/2005.00341)<br>• [AudioLDM (2023)](https://arxiv.org/abs/2301.12503) |  |
+| **7** | **Transformers for image generation** | • [Image Transformer (2018)](https://arxiv.org/abs/1802.05751)<br>• [ViT (2020)](https://arxiv.org/abs/2010.11929)<br>• [MaskGIT (2022)](https://arxiv.org/abs/2202.04200)<br>• [DiT: Diffusion Transformers (2022)](https://arxiv.org/abs/2212.09748) |  |
+| **8** | **Mamba, state space models, and advanced RNNs**<br>(xLSTM, RWKV, Griffin) | • [Mamba (2023)](https://arxiv.org/abs/2312.00752)<br>• [xLSTM (2024)](https://arxiv.org/abs/2405.04517)<br>• [RWKV (2023)](https://arxiv.org/abs/2305.13048)<br>• [Griffin (2024)](https://arxiv.org/abs/2402.19427) |  |
+| **9** | **AI quantum codes** | • [Neural Decoder for Topological Codes (2017)](https://arxiv.org/abs/1610.04238)<br>• [DNN Decoder for Stabilizer Codes (2017)](https://arxiv.org/abs/1705.09334)<br>• [ML Decoder for QEC (2018)](https://arxiv.org/abs/1705.07855) |  |
+| **10** | **Final project presentations** | • Group project / Individual paper study (no GANs) |  |
 
 **Assignments:** Normalizing Flows and Diffusion Models, and Transformers.  
 **Final project:** A group project or an individual paper study (no GANs).
 
 ---
 
-## Background Material
+## General Reference Material
 
-Public background reading grouped by lecture topic. Links point to original sources:
+Foundational textbooks and courses:
 
-| Topic | Resource | Link |
-|---|---|---|
-| General | Stanford CS236, Deep Generative Models (course notes and slides) | [deepgenerativemodels.github.io](https://deepgenerativemodels.github.io/) |
-| General | Goodfellow, Bengio, Courville, *Deep Learning* (textbook) | [deeplearningbook.org](https://www.deeplearningbook.org/) |
-| Autoregressive models | NADE, Neural Autoregressive Distribution Estimation | [arXiv:1306.0185](https://arxiv.org/abs/1306.0185) |
-| Autoregressive models | MADE, Masked Autoencoder for Distribution Estimation | [arXiv:1502.03509](https://arxiv.org/abs/1502.03509) |
-| Autoregressive models | PixelRNN / PixelCNN, Pixel Recurrent Neural Networks | [arXiv:1601.06759](https://arxiv.org/abs/1601.06759) |
-| Autoregressive models | Attention Is All You Need (Transformer) | [arXiv:1706.03762](https://arxiv.org/abs/1706.03762) |
-| WaveNet | WaveNet: A Generative Model for Raw Audio | [arXiv:1609.03499](https://arxiv.org/abs/1609.03499) |
-| Energy-based models | LeCun et al., A Tutorial on Energy-Based Learning | [PDF](http://yann.lecun.com/exdb/publis/pdf/lecun-06.pdf) |
-| Energy-based models | Song & Kingma, How to Train Your Energy-Based Models | [arXiv:2101.03288](https://arxiv.org/abs/2101.03288) |
-| Score-based models | Sliced Score Matching | [arXiv:1905.07088](https://arxiv.org/abs/1905.07088) |
-| Score-based models | Song & Ermon, Generative Modeling by Estimating Gradients of the Data Distribution | [arXiv:1907.05600](https://arxiv.org/abs/1907.05600) |
-| Diffusion models | Ho et al., Denoising Diffusion Probabilistic Models (DDPM) | [arXiv:2006.11239](https://arxiv.org/abs/2006.11239) |
-| Diffusion models | Song et al., Score-Based Generative Modeling through SDEs | [arXiv:2011.13456](https://arxiv.org/abs/2011.13456) |
-| State space models | Gu & Dao, Mamba | [arXiv:2312.00752](https://arxiv.org/abs/2312.00752) |
+- [Stanford CS236: Deep Generative Models](https://deepgenerativemodels.github.io/) — course notes and slides
+- [Deep Learning Textbook (Goodfellow, Bengio, Courville)](https://www.deeplearningbook.org/) — comprehensive reference
+- [RealNVP: Density Estimation using Real NVP (2016)](https://arxiv.org/abs/1605.08803) — Normalizing flows reference
+- [Glow: Generative Flow with Invertible 1x1 Convolutions (2018)](https://arxiv.org/abs/1807.03039) — Normalizing flows reference
 
 ---
 
@@ -55,6 +45,7 @@ Public background reading grouped by lecture topic. Links point to original sour
 
 - [`notes/`](notes/) — my own summaries, written in my words (one file per topic).
 - [`exercises/`](exercises/) — my homework solutions and experiments, one folder per exercise.
+  - [`exercises/team-project/ideas.md`](exercises/team-project/ideas.md) — final-project idea pool and triage.
 
 ---
 
