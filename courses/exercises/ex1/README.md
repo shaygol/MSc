@@ -135,7 +135,7 @@ For $k = 4$ ($N = 16$ hosts), partitioning the network into Pods 0–1 vs. Pods 
 
 ## 2. Run
 
-Set up the environment once as described in the [course README](../README.md#setup), then run from this folder.
+Set up the environment once as described in the [exercises README](../README.md#setup), then run from this folder.
 
 Build a fat-tree and print its node and link counts next to the formulas. The metrics block is printed for every run; with no failures every value is at its ideal:
 
@@ -307,7 +307,7 @@ figures/          # PNGs written by --experiment, embedded above
 README.md
 ```
 
-Dependencies are listed in `requirements.txt` in the course folder (one level up), shared by all exercises.
+Dependencies are listed in `requirements.txt` in the exercises folder (one level up), shared by all exercises.
 
 ## AI usage
 
