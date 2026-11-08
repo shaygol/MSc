@@ -9,19 +9,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header class="hero">
-    <p class="eyebrow">Instructor view</p>
-    <h1>Miswire Hunt</h1>
+<div class="topbar">
+  <div class="topbar-in">
+    <span class="brand"><i class="led"></i>JR-16 <small>instructor view</small></span>
     <div class="status-strip" id="strip">
-      <div><span class="k">Students joined</span><span class="v" id="iSeats">&ndash;</span></div>
+      <div><span class="k">Joined</span><span class="v" id="iSeats">&ndash;</span></div>
       <div><span class="k">Reported</span><span class="v" id="iRep">&ndash;</span></div>
-      <div><span class="k">Faults confirmed</span><span class="v" id="iFaults">&ndash;</span></div>
+      <div><span class="k">Faults</span><span class="v" id="iFaults">&ndash;</span></div>
       <div><span class="k">Wrong labels</span><span class="v" id="iWrong">&ndash;</span></div>
-      <div><span class="k">Fabric</span><span class="v" id="sFabric">&ndash;</span></div>
+      <div class="fabric"><span class="k">Fabric</span><span class="v" id="sFabric">&ndash;</span></div>
     </div>
-  </header>
-
+  </div>
+</div>
+<main>
   <section class="card" id="keyCard">
     <form id="keyForm" class="join">
       <label for="ikey">Instructor key</label>

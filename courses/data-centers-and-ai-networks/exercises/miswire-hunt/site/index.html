@@ -9,29 +9,33 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header class="hero">
-    <p class="eyebrow">Data Centers &amp; AI Networks &middot; Unit 3 &middot; Jupiter Rising</p>
-    <h1>Miswire Hunt</h1>
-    <p class="lede">Bring up <b>JR-16</b>, a 16-switch Clos fabric, before Firepath is allowed to route a single packet. Each of you is one switch. You see only your own ports. Together you see the whole fabric.</p>
+<div class="topbar">
+  <div class="topbar-in">
+    <span class="brand"><i class="led"></i>JR-16 <small>fabric bring-up</small></span>
     <div class="status-strip" id="strip">
       <div><span class="k">Faults confirmed</span><span class="v" id="sFaults">&ndash;</span></div>
       <div><span class="k">Switches reported</span><span class="v" id="sReported">&ndash;</span></div>
-      <div><span class="k">Fabric</span><span class="v" id="sFabric">&ndash;</span></div>
+      <div class="fabric"><span class="k">Fabric</span><span class="v" id="sFabric">&ndash;</span></div>
     </div>
-  </header>
-
-  <section class="card brief">
-    <h2>The situation</h2>
-    <p>&ldquo;Building a fabric with thousands of cables invariably leads to multiple cabling errors.&rdquo; Google's answer in Jupiter was <b>Neighbor Discovery (ND)</b>. Every switch is loaded with the same <b>cluster config</b>, so it knows which peer port should sit at the far end of each of its cables. ND then checks what is really there, and exchanges what it found with the peer. A port is declared up to the routing process only if it is both <b>PHY up</b> and <b>ND up</b>. <span class="ref">(Section 5.2.1)</span></p>
-    <p>JR-16 has <b>five hidden problems</b>. A problem counts as <b>confirmed</b> once switches on two different sides of it have labeled their ports correctly. When all five are confirmed, the fabric comes up.</p>
+  </div>
+</div>
+<main>
+  <header class="hero">
+    <p class="eyebrow">Data Centers &amp; AI Networks &middot; Unit 3 &middot; Jupiter Rising</p>
+    <h1>Miswire<br>Hunt</h1>
+    <p class="lede">Sixteen switches. Five hidden cabling problems. Nobody can route until they are found. <b>Each of you is one switch</b> and sees only your own ports, so the only way to bring the fabric up is to compare notes.</p>
     <ol class="steps">
-      <li>Enter your email to get your switch.</li>
-      <li>Read your port table and label every port (about 10 minutes).</li>
-      <li>Send your report. It paints the shared map for everyone.</li>
-      <li>Use the shared map to answer two root-cause questions.</li>
+      <li><b>Join</b><span>Enter your email, get a switch.</span></li>
+      <li><b>Label</b><span>Check every port against the plan.</span></li>
+      <li><b>Report</b><span>Your labels light up the shared map.</span></li>
+      <li><b>Explain</b><span>Two root-cause questions.</span></li>
     </ol>
-  </section>
+    <details class="why">
+      <summary>Why this matters in Jupiter</summary>
+      <p>&ldquo;Building a fabric with thousands of cables invariably leads to multiple cabling errors.&rdquo; Google's answer was <b>Neighbor Discovery (ND)</b>. Every switch is loaded with the same <b>cluster config</b>, so it knows which peer port should sit at the far end of each cable. ND checks what is really there and exchanges what it found with the peer. A port is declared up to the routing process only if it is both <b>PHY up</b> and <b>ND up</b>. <span class="ref">(Section 5.2.1)</span></p>
+      <p>A problem counts as <b>confirmed</b> once switches on two different sides of it have labeled their ports correctly. When all five are confirmed, the fabric comes up.</p>
+    </details>
+  </header>
 
   <section class="card" id="joinCard">
     <h2>Get your switch</h2>
