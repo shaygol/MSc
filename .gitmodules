@@ -1,0 +1,6 @@
+[submodule "courses/data-centers-and-ai-networks"]
+	path = courses/data-centers-and-ai-networks
+	url = ../data-centers-and-ai-networks.git
+[submodule "courses/generative-ai"]
+	path = courses/generative-ai
+	url = ../generative-ai.git
